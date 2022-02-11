@@ -1,0 +1,125 @@
+/* este es un comentario css*/
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  width: 100%;
+  height: 100fr; }
+
+.border {
+  border-top: 1px solid black; }
+
+#gridAreas {
+  display: grid;
+  /*Grid Areas*/
+  grid-template-areas: "cabeza  cabeza  cabeza" "menu  menu  menu" "servicios  servicios  brazo" "servicios servicios brazo" "pie pie pie";
+  grid-template-columns: 1fr 4fr 2fr;
+  grid-template-rows: 10% 5% 37,5% 37,5% 10%;
+  grid-column-gap: 10px;
+  /* grid-row-gap: 10px; */ }
+
+header {
+  grid-area: cabeza;
+  background-image: radial-gradient(white, yellow);
+  color: black;
+  padding: 10px;
+  font-style: italic;
+  font-family: 'Notable', sans-serif;
+  text-align: center;
+  font-size: xx-large; }
+
+#servicios {
+  grid-area: servicios; }
+  #servicios .primerTitular {
+    padding: 20px;
+    font-style: italic;
+    text-align: left;
+    font-size: xx-large;
+    margin-top: 0px; }
+  #servicios .Titulo1 {
+    font-size: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px; }
+  #servicios .imagenHoy {
+    transition: widht 5s, heigth 2s;
+    width: 600px;
+    height: 400px;
+    /* padding-top: 15px;
+        padding-bottom: 15px; */
+    padding-left: 5%; }
+  #servicios .imagenHoy {
+    transition: widht 5s, heigth 2s;
+    width: 600px;
+    height: 400px;
+    /* padding-top: 15px;
+        padding-bottom: 15px; */
+    padding-left: 5%; }
+  #servicios .textoUno {
+    font-size: large;
+    line-height: 35px;
+    text-align: left;
+    padding: 10px; }
+
+nav {
+  font-family: 'Bebas Neue', cursive;
+  text-decoration: none;
+  background-color: yellow;
+  padding: 10px;
+  text-align: center;
+  word-spacing: 20px;
+  font-size: large;
+  grid-area: menu; }
+
+aside {
+  grid-area: brazo; }
+  aside .lista-noticias {
+    display: flex;
+    flex-direction: column; }
+    aside .lista-noticias .li-index {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 900;
+      width: 100%; }
+      aside .lista-noticias .li-index .imagenLista {
+        padding: 20px;
+        position: relative;
+        width: 80%;
+        height: 20%; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  color: black;
+  text-decoration: none; }
+
+footer {
+  grid-area: pie;
+  background-color: yellow; }
+  footer .footerList .li4 {
+    padding: 10px;
+    width: 20%;
+    position: relative;
+    right: 20px; }
+    footer .footerList .li4 .facebook {
+      width: 85px;
+      height: 45px; }
+  footer .footerList .li5 {
+    padding: 10px;
+    width: 20%;
+    position: relative;
+    left: 60px;
+    bottom: 66px; }
+    footer .footerList .li5 .instagram {
+      width: 40px;
+      height: 40px; }
+  footer .footerList .li6 {
+    padding: 10px;
+    width: 20%;
+    position: relative;
+    left: 120px;
+    bottom: 135px; }
+    footer .footerList .li6 .twitter {
+      width: 50px;
+      height: 50px; }
